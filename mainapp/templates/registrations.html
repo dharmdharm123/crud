@@ -1,0 +1,20 @@
+{% extends "index.html"%}
+{% block body%}
+<div class="container">
+    <div class="container">
+    <h1 class="text-center alert alert-info m-2">Registration Form</h1>
+            <div class="container text-center">
+                <a href="" class="btn btn-info">Already Register?</a>
+            </div>
+    <form method="post">
+        {% for i in form%}
+        {{i}}{{i.label_tag}}{{i.errors}}
+        {%endfor%}
+        <div class="container mt-2">
+            <a href="" class="btn btn-primary" style="width: 200px;">Submit</a>
+        </div>
+    </form>
+    </div>
+    
+</div>
+{%endblock body%}
